@@ -34,10 +34,10 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
   const linkColor = isActive()
     ? scrolled
       ? "text-red-600 dark:text-red-400" // active after scroll
-      : "text-white"                     // active at top
+      : "text-black"                     // active at top
     : scrolled
       ? "text-black hover:text-red-600 dark:hover:text-red-400" // inactive after scroll
-      : "text-white hover:text-red-300";                        // inactive at top
+      : "text-black hover:text-red-300";                        // inactive at top
 
   return (
     <div
