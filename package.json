@@ -2,19 +2,18 @@
   "name": "venus_project",
   "version": "1.0.1",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint"
-}
-
-,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@iconify/icons-ion": "^1.2.10",
     "@iconify/react": "^5.0.1",
     "aos": "^2.3.4",
     "axios": "^1.7.2",
+    "critters": "^0.0.23",
     "date-fns": "^3.4.0",
     "framer-motion": "^12.23.26",
     "gray-matter": "^4.0.3",
