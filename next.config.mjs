@@ -1,18 +1,14 @@
 /** @type {import('next').NextConfig} */
-
-const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? `/venus-nextjs` : "";
-
 const nextConfig = {
-output: "standalone",
-  basePath,
-  assetPrefix: basePath,
-  images: {
-    unoptimized: true,
-  },
+  reactStrictMode: true,
+  output: "standalone",       // ✅ server build, not static export
   trailingSlash: true,
+  images: {
+    unoptimized: true,         // optional: avoids Next.js image optimization
+  },
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    // you can keep public env vars here if needed
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 };
 
