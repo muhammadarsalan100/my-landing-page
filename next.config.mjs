@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 const basePath = isProd ? `/venus-nextjs` : "";
 
 const nextConfig = {
-  output: "export",
+output: "standalone",
   basePath,
   assetPrefix: basePath,
   images: {
